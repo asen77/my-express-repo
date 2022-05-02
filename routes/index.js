@@ -19,4 +19,9 @@ router.get('/hello', function(req, res, next) {
   res.render('hello', { message: message });
 });
 
+/* GET about page. */
+router.get('/travel-page', function(req, res, next) {
+  res.render('travel'); //references the view that the ejs file exists in (route deteremines browser path)
+});
+
 module.exports = router;
